@@ -1,1 +1,4 @@
-token = '5545776705:AAFWBp-TwHYVAHfjfMP3R1gSQV64AYEsKrU'
+from os import environ
+
+token = environ.get("TOKEN")
+assert token is not None
